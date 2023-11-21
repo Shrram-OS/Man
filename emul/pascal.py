@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow
 from PyQt5.QtGui import QPixmap, QFont
-from PyQt5.QtCore import Qt, QRect
+from PyQt5.QtCore import QRect
 
 
 class Pascal(QMainWindow):

@@ -9,7 +9,7 @@ from emul.fon import Fon_Neyman
 class Window(QMainWindow):
     def __init__(self):
         super().__init__()
-        # fds
+
         self.setWindowTitle("Man")
         self.setGeometry(550, 300, 900, 150)
         self.setStyleSheet(open("static/css/main/self.css").read())

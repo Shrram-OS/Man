@@ -1,8 +1,7 @@
 import time
-from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QLineEdit, QWidget, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QPushButton
 from PyQt5.QtGui import QFont
 import sys
-import threading
 
 class Fon_Neyman(QMainWindow):
     def __init__(self):
@@ -14,7 +13,7 @@ class Fon_Neyman(QMainWindow):
         self.setStyleSheet(open("static/css/fon_neyman/self.css").read())
 
         self.setWindowTitle("Fon Neyman")
-        self.setGeometry(550, 300, 600, 230)
+        self.setGeometry(550, 300, 600, 240)
 
         self.font = QFont()
         self.font.setPointSize(10)
@@ -39,7 +38,7 @@ class Fon_Neyman(QMainWindow):
 
         # Clear data button
         self.clear_data_button = QPushButton(self)
-        self.clear_data_button.move(20, 150)
+        self.clear_data_button.move(230, 200)
         self.clear_data_button.setText("Clear data")
         self.clear_data_button.clicked.connect(self.clear)
         self.clear_data_button.setStyleSheet(open("static/css/fon_neyman/clear_data.css").read())
