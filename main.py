@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import * 
 
 import sys
-from pascal import Pascal
-from fon import Fon_Neyman
+from emul.pascal import Pascal
+from emul.fon import Fon_Neyman
 
 class Window(QMainWindow):
     def __init__(self):
