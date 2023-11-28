@@ -1,0 +1,12 @@
+QTextEdit {
+    /* background-image: url('/static/img/bg.jpg'); */
+    background-color: #22262b;
+    background-repeat: no-repeat;
+    color: green;
+    font-family: Consolas, monaco, monospace;
+    padding-top: 10px;
+    font-size: 20px;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align:center;
+}
