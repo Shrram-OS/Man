@@ -94,8 +94,6 @@ class Fon_Neyman(QMainWindow):
             self.operations.extend(i for i in self.input_operations.text().split(" "))
             self.hud()
  
-
-
     def hud(self):
         self.label_operands.setText(f"Operands: {self.operands}")
         self.label_operations.setText(f"Operations: {self.operations}")

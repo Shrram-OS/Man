@@ -4,11 +4,11 @@ from PyQt5.QtGui import QPixmap, QFont, QKeySequence
 import cl4py
 import ast
 
-class lisp(QMainWindow):
+class Lisp(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("LISP")
+        self.setWindowTitle("Lisp")
 
         self.setGeometry(550, 200, 690, 650)
 
@@ -53,6 +53,6 @@ class lisp(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    window = lisp()
+    window = Lisp()
     window.show()
     sys.exit(app.exec_())
