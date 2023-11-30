@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtWidgets import * 
 from PyQt5.QtGui import * 
 
