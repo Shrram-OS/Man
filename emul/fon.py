@@ -22,12 +22,12 @@ class Fon_Neyman(QMainWindow):
         self.input_operands = QLineEdit(self)
         self.input_operands.setGeometry(10, 10, 150, 30)
         self.input_operands.move(100, 50)
-        self.input_operands.setPlaceholderText("Введите операндумы")
+        self.input_operands.setPlaceholderText("Введіть операндуми")
 
         self.input_operations = QLineEdit(self)
         self.input_operations.setGeometry(10, 250, 150, 30)
         self.input_operations.move(300, 50)
-        self.input_operations.setPlaceholderText("Введите действие")
+        self.input_operations.setPlaceholderText("Введіть дії")
 
         # Send data button
         self.button = QPushButton(self)
