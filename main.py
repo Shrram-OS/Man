@@ -13,7 +13,7 @@ class Window(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Man")
-        self.setGeometry(550, 300, 900, 150)
+        self.setGeometry(550, 300, 700, 150)
         self.setStyleSheet(open("static/css/main/self.css").read())
 
         self.pascal_button = QPushButton(self)
