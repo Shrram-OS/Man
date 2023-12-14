@@ -1,6 +1,7 @@
 import time
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QLineEdit, QPushButton
 from PyQt5.QtGui import QFont
+from PyQt5.QtCore import QTimer
 import sys
 
 class Fon_Neyman(QMainWindow):
@@ -62,9 +63,10 @@ class Fon_Neyman(QMainWindow):
         self.calculation_button.setText("Calculate")
         self.calculation_button.clicked.connect(self.calculate)
         self.calculation_button.setStyleSheet(open("static/css/fon_neyman/calculate.css").read())
-
+        
         self.hud()
-    
+
+    # Мені самому соромно, вибачте за це: 
     def calculate(self):
         while len(self.operations) > 0:
             if len(self.operands) - 1 == len(self.operations):
@@ -73,8 +75,6 @@ class Fon_Neyman(QMainWindow):
                 self.operands[0] = result
                 del self.operands[1]
                 del self.operations[0]
-                time.sleep(1)
-                self.hud()
             else:
                 break
 
