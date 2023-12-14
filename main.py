@@ -6,6 +6,7 @@ import sys
 from emul.pascal import Pascal
 from emul.fon import Fon_Neyman
 from emul.lisp import Lisp
+from emul.python import Python
 
 
 class Window(QMainWindow):
@@ -13,7 +14,7 @@ class Window(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Man")
-        self.setGeometry(550, 300, 700, 150)
+        self.setGeometry(550, 300, 650, 150)
         self.setStyleSheet(open("static/css/main/self.css").read())
 
         self.pascal_button = QPushButton(self)
@@ -34,8 +35,16 @@ class Window(QMainWindow):
         self.lisp_button.setText("Lisp")
         self.lisp_button.clicked.connect(self.lisp)
 
-        
+        self.python_button = QPushButton(self)
+        self.python_button.move(500, 50)
+        self.python_button.setStyleSheet(open("static/css/main/python.css").read())
+        self.python_button.setText("Python")
+        self.python_button.clicked.connect(self.python)   
     
+    def python(self):
+        self.python = Python()
+        self.python.show()
+
     def fon(self):
         self.fon = Fon_Neyman()
         self.fon.show()
