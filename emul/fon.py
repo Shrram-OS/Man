@@ -75,6 +75,7 @@ class Fon_Neyman(QMainWindow):
                 self.operands[0] = result
                 del self.operands[1]
                 del self.operations[0]
+                self.hud()
             else:
                 break
 
